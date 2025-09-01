@@ -1,4 +1,4 @@
-### flexible_json_serializable
+### safety_json_serializable
 
 Base on [package:safety_json_serializable] and handle parsing JSON to objects without throwing exceptions.
 
@@ -11,7 +11,7 @@ Base on [package:safety_json_serializable] and handle parsing JSON to objects wi
 
 Left: json_serializable
 
-Right: flexible_json_serializable
+Right: safety_json_serializable
 
 ![](resources/diff.jpg)
 
