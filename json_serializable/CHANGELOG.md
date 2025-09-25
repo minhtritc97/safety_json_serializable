@@ -1,4 +1,6 @@
+## 2.0.1
 
+- Update based on [package:json_serializable] version 6.11.1
 
 ## 2.0.0
 
