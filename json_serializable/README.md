@@ -13,7 +13,7 @@ Left: json_serializable
 
 Right: safety_json_serializable
 
-![](resources/diff.jpg)
+![](https://raw.githubusercontent.com/minhtritc97/safety_json_serializable/refs/heads/master/json_serializable/resources/diff.jpg)
 
 [`BigInt`]: https://api.dart.dev/stable/dart-core/BigInt-class.html
 [`bool`]: https://api.dart.dev/stable/dart-core/bool-class.html
