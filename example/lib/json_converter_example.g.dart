@@ -8,7 +8,7 @@ part of 'json_converter_example.dart';
 
 DateTimeExample _$DateTimeExampleFromJson(Map<String, dynamic> json) =>
     DateTimeExample(
-      const _DateTimeEpochConverter().fromJson((json['when'] as num).toInt()),
+      const _DateTimeEpochConverter().fromJson(json['when'] as int),
     );
 
 Map<String, dynamic> _$DateTimeExampleToJson(DateTimeExample instance) =>

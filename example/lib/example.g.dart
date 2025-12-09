@@ -31,7 +31,7 @@ Map<String, dynamic> _$PersonToJson(Person instance) => <String, dynamic>{
 };
 
 Order _$OrderFromJson(Map<String, dynamic> json) =>
-    Order(Order._dateTimeFromEpochUs((json['date'] as num).toInt()))
+    Order(Order._dateTimeFromEpochUs(json['date'] as int))
       ..count = double.tryParse(json['count'].toString())?.toInt()
       ..itemNumber = double.tryParse(json['itemNumber'].toString())?.toInt()
       ..isRushed = bool.tryParse(json['isRushed'].toString())
@@ -39,7 +39,7 @@ Order _$OrderFromJson(Map<String, dynamic> json) =>
           ? null
           : Item.fromJson(json['item'] as Map<String, dynamic>)
       ..prepTime = Order._durationFromMilliseconds(
-        (json['prep-time'] as num?)?.toInt(),
+        double.tryParse(json['prep-time'].toString())?.toInt(),
       );
 
 Map<String, dynamic> _$OrderToJson(Order instance) => <String, dynamic>{
